@@ -3,9 +3,9 @@ class Bootstrap
     "Hello"
   end
 
-  def calc
+  def calculate
     a = 5
     b = 10
-    "a + b = c"
+    a + b = c
   end
 end
