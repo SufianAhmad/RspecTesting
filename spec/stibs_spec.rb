@@ -1,6 +1,6 @@
 require "priceCalc"
 
-describe "Stubes" do
+xdescribe "Stubes" do
   it "provide stibes to simulate" do
     calculator = PriceCalculator.new
    

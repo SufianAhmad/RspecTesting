@@ -1,7 +1,7 @@
 require "blog"
 require "post"
 
-describe "call backs" do
+xdescribe "call backs" do
   let(:blog){Blog.new}
 
   before(:example) do
