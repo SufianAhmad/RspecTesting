@@ -93,4 +93,11 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+config.after(:each){
+  puts "test passes"
+}
+
+config.before(:suite){
+  puts "Welcome to Rspec!"
+}
 end
