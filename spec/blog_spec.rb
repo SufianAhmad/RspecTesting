@@ -2,11 +2,23 @@ require "blog"
 require "post"
 
 describe Blog do
-  it "has no blog" do
-    expect(Blog.new).to be_empty
+  context "with no posts" do
+    let(:blog){ Blog.new }
+
+    it "has no blog" do
+      expect(blog).to be_empty
+    end
   end
 
-  it  "has one post when initialized" do
-    expect(Blog.new(posts: [Post.new])).not_to be_empty
+  context "with one post" do
+    let(:blog){Blog.new(posts: [Post.new])}
+
+    it  "has one post when initialized" do
+      expect(blog).not_to be_empty
+    end
+
+    it "count number of posts" do
+      expect(blog.posts_count).to eq 1
+    end
   end
 end

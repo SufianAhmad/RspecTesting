@@ -6,4 +6,8 @@ class Blog
   def empty?
     @posts.empty?
   end
+
+  def posts_count
+    @posts.count
+  end
 end
