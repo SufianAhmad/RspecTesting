@@ -1,6 +1,6 @@
 require "bootstrap"
 
-describe Bootstrap do
+xdescribe Bootstrap do
   it "says hello" do
     expect(Bootstrap.new.hello).to include "Hello"
   end
