@@ -1,6 +1,6 @@
 require "apis"
 
-describe WebApi do
+xdescribe WebApi do
   it "has a url" do
     api = WebApi.new "https://localhost:9292"
     expect(api).to respond_to :url
